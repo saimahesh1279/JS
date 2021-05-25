@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>strings
+
+    </title>
+
+</head>
+
+<body bgcolor="skyblue">
+    <h1 style="color: white;">Strings in java script</h1>
+    <script>
+        var x = new String("hello");
+        for (i = 0; i < x.length; i++) {
+            document.write(x.charAt(i) + "<br/>");
+        }
+
+
+        var x = new String("helLo");
+        document.write(x.indexOf("h") + "<br/>");
+
+        var x = new String("hello welcome hello");
+        document.write(x.indexOf("hello", 7) + "<br/>");
+
+        var x = new String("welcome hello welcome hello");
+        document.write(x.lastIndexOf("hello", 15) + "<br/>");
+
+        var x = new String("helLo");
+        document.write(x.toLowerCase() + "<br/>");
+        document.write(x.toUpperCase() + "<br/>");
+
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(-12, -6);
+        document.write(res + "<br/>");
+
+        var x = new String("helLo welcome");
+        document.write(x.slice(2, 8) + "<br/>")
+
+
+
+
+        // replace()
+    </script>
+</body>
+
+</html>

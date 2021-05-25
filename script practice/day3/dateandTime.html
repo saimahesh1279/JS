@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>data and time </title>
+</head>
+
+<body bgcolor="yellow" align="center">
+    <h1>date and time </h1>
+
+    <span id="presenttime"></span>
+    <!-- <h1 id="h1"></h1>
+    <button type="button" onclick="date()">show date and time </button>
+    <script>
+        function date() {
+            document.getElementById('h1').innerHTML = Date();
+        }
+    </script> -->
+
+
+
+
+    <!-- <script>
+        var date = new Date();
+        document.write(date);
+    </script> -->
+
+
+
+    <script>
+        // var today = new Date();
+        // var day = today.getDate();
+        // var month = today.getMonth();
+        // var year = today.getFullYear();
+        // document.write("date= " + day + " month= " + month + " year= " + year)
+
+
+
+        // var today = new Date();
+        // var h = today.getHours();
+        // var m = today.getMinutes();
+        // var s = today.getSeconds();
+        // var ms = today.getMilliseconds();
+
+        // document.write(h + ":" + m + ":" + s + ":" + ms);
+
+        function time() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            var ms = today.getMilliseconds();
+            document.getElementById('presenttime').innerHTML = h + ":" + m + ":" + s + ":" + ms;
+            setInterval("time()", 1000);
+        }
+        time()
+    </script>
+</body>
+
+</html>

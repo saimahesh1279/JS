@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>
+        object in JavaScript
+    </title>
+
+</head>
+
+<body align="center" bgcolor="yellow">
+    <h1 style="background-color: black;color: white;">
+        object topic in java script
+    </h1>
+    <script>
+        // var obj = {
+        //     roll: 101,
+        //     name: "mahesh",
+        //     address: "hyderabad"
+        // }
+        // document.write(obj.roll + " , " + obj.name + " , " + obj.address);
+        // var stu = new Object();
+        // stu.roll = 101;
+        // stu.name = "mahesh";
+        // stu.address = "hyd";
+        // document.write(stu.roll + " , " + stu.name + " , " + stu.address);
+        function stu(roll, name, address) {
+            this.roll = roll;
+            this.name = name;
+            this.address = address;
+        }
+        var student = new stu(101, "mahesh", "hyd");
+
+        document.write(student.roll + " , " + student.name + " , " + student.address);
+    </script>
+</body>
+
+</html>
